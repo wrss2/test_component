@@ -1,10 +1,10 @@
-1.Komponent powinien byæ reu¿ywalny i dzia³aæ prawid³owo na ka¿dej stronie, na której zostanie u¿yty.
-2.Mo¿esz wykorzystaæ dowolny framework lub biliotekê JavaScriptow¹. Zamockuj wymagane dane w pliku JSON.
-3.Komponent powinien byæ responsywny i dostosowany do rozdzielczoœci urz¹dzenia, na którym bêdzie wyœwietlany.
-4.Klikniêcie w ikone serca powinno zwiêkszaæ liczbê "like'ów".
-5.Klikniêcie w przycisk "follow" zwiêksza liczbê Followersów. 
-6.Wpisanie nowego komentarza dodaje go na koniec listy.
-7.Lista komentarzy jest posortowana wg daty dodania.
-8.Przycick share wyœwietla okno z adresem strony.
-9.Testy jednostkowe mile widziane (w dowolnym frameworku)
-10.Proszê umieœciæ projekt  na publicznym repozytorium (Github, etc.)
+1.Komponent powinien byæ reu¿ywalny i dzia³aæ prawid³owo na ka¿dej stronie, na której zostanie u¿yty. --
+2.Mo¿esz wykorzystaæ dowolny framework lub biliotekê JavaScriptow¹. Zamockuj wymagane dane w pliku JSON. --
+3.Komponent powinien byæ responsywny i dostosowany do rozdzielczoœci urz¹dzenia, na którym bêdzie wyœwietlany. \
+4.Klikniêcie w ikone serca powinno zwiêkszaæ liczbê "like'ów". --
+5.Klikniêcie w przycisk "follow" zwiêksza liczbê Followersów.  --
+6.Wpisanie nowego komentarza dodaje go na koniec listy.  --
+7.Lista komentarzy jest posortowana wg daty dodania. \
+8.Przycick share wyœwietla okno z adresem strony.  \
+9.Testy jednostkowe mile widziane (w dowolnym frameworku) \
+10.Proszê umieœciæ projekt  na publicznym repozytorium (Github, etc.)  --

@@ -43,6 +43,16 @@ h3{
 
 .top_follow{
 
+    .share{
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      color: #ffa640;
+      font-size: 12px;
+      &:hover{
+        cursor: pointer;
+      }
+    }
     height: 183px;
     background: white;
     box-shadow: 0 0 4px 0 rgba(172,172,172,0.50);

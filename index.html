@@ -33,6 +33,7 @@
     </div>
     <div class="content">
         <div class="top_follow">
+            <div class="share "><i class="fa fa-share-square-o"></i></div>
             <div class="person">
                   <div class="photo"><img src="images/avatar.jpg" alt=""></div>
                   <div class="details">
@@ -65,22 +66,7 @@
         <div class="content_follow">
 
             <a href="#" class="comments" >Hide comments (353)</a>
-            <div class="posts">
-                <ul>
-                    <!-- <li class="collection-item avatar">
-
-                        <div class="wrapper-top">
-                            <img src="images/avatar.jpg" alt="">
-                            <span class="title_header">Mike Ross</span>
-                            <span class="day">1d</span>
-                        </div>
-
-                        <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non
-                            felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.</p>
-
-                    </li> -->
-                </ul>
-            </div>
+            <div class="posts"></div>
             <div class="wrapper-comment">
                 <input type="text" class="input_cm" placeholder="Add a comment">
             </div>
@@ -91,74 +77,6 @@
 </div>
 
 
-<script>
-(function($){
-  console.log("z1")
-
-
-
-  $.getJSON("data.json", function(json) {
-    $.each( json, function( key, val ) {
-      $(".posts ul").append(
-              '<li class="collection-item avatar">'+
-                  '<div class="wrapper-top">'+
-                        '<img src="'+val.avatar+'" alt="">'+
-                        '<span class="title_header">'+val.name+'</span>'+
-                        '<span class="day">'+val.day+'</span>'+
-                    '</div>'+
-                    '<p>'+val.message+'</p>'+
-                '</li>')
-    });
-    console.log(json);
-  });
-  console.log("z2")
-
-
-  $(".heart").click(function(event){
-      event.preventDefault();
-      var like = parseInt($(".likes:first-child h1").text())+1;
-      $(".likes:first-child h1").text(like);
-      console.log("heart "+like);
-  });
-  $(".folow-button").click(function(event){
-      event.preventDefault();
-      var follow = parseInt($(".likes:last-child h1").text())+1;
-      $(".likes:last-child h1").text(follow);
-      console.log("folow-button");
-  });
-  $(".comments").click(function(event){
-    event.stopPropagation();
-
-
-     $(".posts , .wrapper-comment").toggle();
-     if($('.posts').is(':visible')){
-         $(".content_follow").animate({height:'674px'});
-         $(".main").animate({height:'813px'});
-    }else{
-       $(".content_follow").animate({height:'60px'});
-      $(".main").animate({height:'310px'});
-    }
-  });
-
-  $(document).keypress(function(e) {
-    if(e.which == 13 && $(".input_cm").val() !="" ) {
-        console.log('You pressed enter!');
-        var coment = $(".input_cm").val();
-        $(".posts ul").append(
-          '<li class="collection-item avatar">'+
-            '<div class="wrapper-top">'+
-                  '<img src="images/avatar.jpg" alt="">'+
-                  '<span class="title_header">Mike Ross</span>'+
-                  '<span class="day">0d</span>'+
-              '</div>'+
-              '<p>'+coment+'</p>'+
-          '</li>'
-
-        );
-    }
-  });
-})(jQuery);
-
-</script>
+<script src="script.js" charset="utf-8"></script>
 </body>
 </html>
