@@ -1,0 +1,164 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--<link rel="stylesheet" href="bootstrap/css/bootstrap.css">-->
+    <!--<link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css">-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--<script src="bootstrap/js/bootstrap.js"></script>-->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel='stylesheet' type='text/css' href='node_modules/font-awesome/css/font-awesome.min.css'>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <!-- <script src="script.js"></script> -->
+
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900" rel="stylesheet">
+</head>
+<body>
+
+<!--<div class="test"></div>-->
+
+<div class="main">
+    <div class="header">
+
+
+    </div>
+    <div class="content">
+        <div class="top_follow">
+            <div class="person">
+                  <div class="photo"><img src="images/avatar.jpg" alt=""></div>
+                  <div class="details">
+                    <h1 class="title">Harvey Specter <span class="heart fa fa-heart-o"></span></h5>
+                    <h2 class="city">New York, USA</h6>
+                  </div>
+            </div>
+            <div class="numbers">
+                <div class="data">
+                    <div class="likes-wrap">
+                        <div class="likes">
+                              <h1>121</h1>
+                              <h3>Likes</h3>
+                          </div>
+                           <div class="line"></div>
+                        <div class="likes">
+                            <h1>723</h1>
+                            <h3>Following</h3>
+                        </div>
+                         <div class="line"></div>
+                        <div class="likes">
+                            <h1>4433</h1>
+                            <h3>Followers</h3>
+                        </div>
+                    </div>
+                    <div class="folow-button">Follow</div>
+                </div>
+            </div>
+        </div>
+        <div class="content_follow">
+
+            <a href="#" class="comments" >Hide comments (353)</a>
+            <div class="posts">
+                <ul>
+                    <!-- <li class="collection-item avatar">
+
+                        <div class="wrapper-top">
+                            <img src="images/avatar.jpg" alt="">
+                            <span class="title_header">Mike Ross</span>
+                            <span class="day">1d</span>
+                        </div>
+
+                        <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non
+                            felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.</p>
+
+                    </li> -->
+                </ul>
+            </div>
+            <div class="wrapper-comment">
+                <input type="text" class="input_cm" placeholder="Add a comment">
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+<script>
+(function($){
+  console.log("z1")
+
+
+
+  $.getJSON("data.json", function(json) {
+    $.each( json, function( key, val ) {
+      $(".posts ul").append(
+              '<li class="collection-item avatar">'+
+                  '<div class="wrapper-top">'+
+                        '<img src="'+val.avatar+'" alt="">'+
+                        '<span class="title_header">'+val.name+'</span>'+
+                        '<span class="day">'+val.day+'</span>'+
+                    '</div>'+
+                    '<p>'+val.message+'</p>'+
+                '</li>')
+    });
+    console.log(json);
+  });
+  console.log("z2")
+
+
+  $(".heart").click(function(event){
+      event.preventDefault();
+      var like = parseInt($(".likes:first-child h1").text())+1;
+      $(".likes:first-child h1").text(like);
+      console.log("heart "+like);
+  });
+  $(".folow-button").click(function(event){
+      event.preventDefault();
+      var follow = parseInt($(".likes:last-child h1").text())+1;
+      $(".likes:last-child h1").text(follow);
+      console.log("folow-button");
+  });
+  $(".comments").click(function(event){
+    event.stopPropagation();
+
+
+     $(".posts , .wrapper-comment").toggle();
+     if($('.posts').is(':visible')){
+         $(".content_follow").animate({height:'674px'});
+         $(".main").animate({height:'813px'});
+    }else{
+       $(".content_follow").animate({height:'60px'});
+      $(".main").animate({height:'310px'});
+    }
+  });
+
+  $(document).keypress(function(e) {
+    if(e.which == 13 && $(".input_cm").val() !="" ) {
+        console.log('You pressed enter!');
+        var coment = $(".input_cm").val();
+        $(".posts ul").append(
+          '<li class="collection-item avatar">'+
+            '<div class="wrapper-top">'+
+                  '<img src="images/avatar.jpg" alt="">'+
+                  '<span class="title_header">Mike Ross</span>'+
+                  '<span class="day">0d</span>'+
+              '</div>'+
+              '<p>'+coment+'</p>'+
+          '</li>'
+
+        );
+    }
+  });
+})(jQuery);
+
+</script>
+</body>
+</html>

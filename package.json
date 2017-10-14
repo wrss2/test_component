@@ -1,0 +1,23 @@
+{
+  "name": "test_js2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp styles & live-server ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "6.3.6",
+    "bootstrap": "^3.3.7",
+    "cssnano": "3.5.2",
+    "font-awesome": "^4.7.0",
+    "gulp": "3.9.1",
+    "gulp-concat": "2.6.0",
+    "gulp-postcss": "6.1.0",
+    "gulp-sass": "2.2.0",
+    "live-server": "^1.2.0"
+  }
+}
