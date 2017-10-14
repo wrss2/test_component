@@ -4,7 +4,7 @@
 4.Klikniêcie w ikone serca powinno zwiêkszaæ liczbê "like'ów". --
 5.Klikniêcie w przycisk "follow" zwiêksza liczbê Followersów.  --
 6.Wpisanie nowego komentarza dodaje go na koniec listy.  --
-7.Lista komentarzy jest posortowana wg daty dodania. \
-8.Przycick share wyœwietla okno z adresem strony.  \
+7.Lista komentarzy jest posortowana wg daty dodania. -\
+8.Przycick share wyœwietla okno z adresem strony.  -\
 9.Testy jednostkowe mile widziane (w dowolnym frameworku) \
 10.Proszê umieœciæ projekt  na publicznym repozytorium (Github, etc.)  --
