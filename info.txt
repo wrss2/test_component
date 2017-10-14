@@ -1,10 +1,13 @@
-1.Komponent powinien byæ reu¿ywalny i dzia³aæ prawid³owo na ka¿dej stronie, na której zostanie u¿yty. --
-2.Mo¿esz wykorzystaæ dowolny framework lub biliotekê JavaScriptow¹. Zamockuj wymagane dane w pliku JSON. --
-3.Komponent powinien byæ responsywny i dostosowany do rozdzielczoœci urz¹dzenia, na którym bêdzie wyœwietlany. \
-4.Klikniêcie w ikone serca powinno zwiêkszaæ liczbê "like'ów". --
-5.Klikniêcie w przycisk "follow" zwiêksza liczbê Followersów.  --
+3.Komponent powinien byï¿½ responsywny i dostosowany do rozdzielczoï¿½ci urzï¿½dzenia, na ktï¿½rym bï¿½dzie wyï¿½wietlany. \ !!!
+
+
+
+1.Komponent powinien byï¿½ reuï¿½ywalny i dziaï¿½aï¿½ prawidï¿½owo na kaï¿½dej stronie, na ktï¿½rej zostanie uï¿½yty. --
+2.Moï¿½esz wykorzystaï¿½ dowolny framework lub biliotekï¿½ JavaScriptowï¿½. Zamockuj wymagane dane w pliku JSON. --
+4.Klikniï¿½cie w ikone serca powinno zwiï¿½kszaï¿½ liczbï¿½ "like'ï¿½w". --
+5.Klikniï¿½cie w przycisk "follow" zwiï¿½ksza liczbï¿½ Followersï¿½w.  --
 6.Wpisanie nowego komentarza dodaje go na koniec listy.  --
-7.Lista komentarzy jest posortowana wg daty dodania. -\
-8.Przycick share wyœwietla okno z adresem strony.  -\
-9.Testy jednostkowe mile widziane (w dowolnym frameworku) \
-10.Proszê umieœciæ projekt  na publicznym repozytorium (Github, etc.)  --
+7.Lista komentarzy jest posortowana wg daty dodania. --
+8.Przycick share wyï¿½wietla okno z adresem strony.  --
+9.Testy jednostkowe mile widziane (w dowolnym frameworku) --
+10.Proszï¿½ umieï¿½ciï¿½ projekt  na publicznym repozytorium (Github, etc.)  --
