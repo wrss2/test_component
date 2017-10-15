@@ -24,7 +24,17 @@ h3{
   margin: 0;
 }
 
+.input_cm{
+  font-size: 18px;
+  color: #8298B9;
+  letter-spacing: 0;
+  &::placeholder{
+    font-size: 18px;
+    color: #8298B9;
+    letter-spacing: 0;
+  }
 
+}
 .wrapper{
     margin: 25px auto 0 auto;
     position: relative;
@@ -32,7 +42,7 @@ h3{
     width: 500px;
     margin: 25px auto;
     position: relative;
-
+    overflow: visible !important;
 
     background: #FFFFFF;
     box-shadow: 0 0 4px 0 rgba(172,172,172,0.50);
