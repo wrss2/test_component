@@ -84,14 +84,26 @@
   $(".comments").click(function(event){
     event.stopPropagation();
 
-
+    console.log($(document).width())
      $(".posts , .wrapper-comment").toggle();
+
      if($('.posts').is(':visible')){
+       if($(document).width() <=550){
+         $(".content_follow").animate({height:'600px'});
+         $(".wrapper").animate({height:'813px'});
+       }else{
          $(".content_follow").animate({height:'674px'});
+         $(".wrapper").animate({height:'813px'});
+       }
         // $(".main").animate({height:'813px'});
     }else{
        $(".content_follow").animate({height:'60px'});
-    //  $(".main").animate({height:'310px'});
+       if($(document).width() <=550){
+
+         $(".wrapper").animate({height:'380px'});
+      }else{
+        $(".wrapper").animate({height:'310px'});
+      }
     }
   });
 

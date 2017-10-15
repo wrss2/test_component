@@ -1,9 +1,7 @@
-3.Komponent powinien by� responsywny i dostosowany do rozdzielczo�ci urz�dzenia, na kt�rym b�dzie wy�wietlany. \ !!!
-
-
 
 1.Komponent powinien by� reu�ywalny i dzia�a� prawid�owo na ka�dej stronie, na kt�rej zostanie u�yty. --
 2.Mo�esz wykorzysta� dowolny framework lub biliotek� JavaScriptow�. Zamockuj wymagane dane w pliku JSON. --
+3.Komponent powinien by� responsywny i dostosowany do rozdzielczo�ci urz�dzenia, na kt�rym b�dzie wy�wietlany. --
 4.Klikni�cie w ikone serca powinno zwi�ksza� liczb� "like'�w". --
 5.Klikni�cie w przycisk "follow" zwi�ksza liczb� Followers�w.  --
 6.Wpisanie nowego komentarza dodaje go na koniec listy.  --
