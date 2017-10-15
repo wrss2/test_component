@@ -88,10 +88,10 @@
      $(".posts , .wrapper-comment").toggle();
      if($('.posts').is(':visible')){
          $(".content_follow").animate({height:'674px'});
-         $(".main").animate({height:'813px'});
+        // $(".main").animate({height:'813px'});
     }else{
        $(".content_follow").animate({height:'60px'});
-      $(".main").animate({height:'310px'});
+    //  $(".main").animate({height:'310px'});
     }
   });
 
@@ -113,5 +113,5 @@
   });
 
 
-  
+
 })(jQuery);
