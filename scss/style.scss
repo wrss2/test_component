@@ -63,6 +63,7 @@ header{
       top: 10px;
       color: #ffa640;
       font-size: 12px;
+      z-index: 9999;
       &:hover{
         cursor: pointer;
       }
@@ -355,22 +356,22 @@ a{
 
 
 @media screen and (max-width: 550px) {
-  .numbers{
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px !important;
-
-  }
   .likes-wrap{
     flex-direction: row;
+  }
+
+  .popup .inner{
+    top: 95px;
   }
 
   .posts{
     height: 441px;
   }
+
   .content_follow{
     height: 591px;
-    }
+  }
+
   .wrapper{
       margin: 25px auto;
       position: relative;
@@ -382,10 +383,12 @@ a{
 
       background: #FFFFFF;
       box-shadow: 0 0 4px 0 rgba(172,172,172,0.50);
-  }
+   }
+
   .top_follow{
      height: 253px;
-    }
+  }
+
   .person{
       .photo {
         margin-right: 0;
@@ -409,8 +412,14 @@ a{
 
   }
 
-  .numbers .folow-button {
-    width: 100%;
-    margin-top: 17px;
+  .numbers{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px !important;
+    .folow-button {
+      width: 100%;
+      margin-top: 17px;
+    }
   }
+
 }
