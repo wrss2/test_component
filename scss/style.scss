@@ -24,17 +24,7 @@ h3{
   margin: 0;
 }
 
-.input_cm{
-  font-size: 18px;
-  color: #8298B9;
-  letter-spacing: 0;
-  &::placeholder{
-    font-size: 18px;
-    color: #8298B9;
-    letter-spacing: 0;
-  }
 
-}
 .wrapper{
     margin: 25px auto 0 auto;
     position: relative;
@@ -124,17 +114,37 @@ header{
 
 
 
+
+
 .wrapper-comment{
   border-top: 1px solid #ebebeb;
   padding: 20px 25px 0 25px;
   margin-top: 10px;
 
-    input{
-        height: 40px;
-        box-sizing: border-box;
-        margin: 25px auto;
-        width: 100%;
+    .input_cm{
+      height: 40px;
+      box-sizing: border-box;
+      margin: 25px auto 0 auto;
+      width: 100%;
+      font-size: 18px;
+      color: #8298B9;
+      letter-spacing: 0;
+      border-bottom: 2px solid #DBE0E8 !important;
+      &::placeholder{
+        font-size: 18px;
+        color: #8298B9;
+        letter-spacing: 0;
+      }
+
+      &:focus{
+          border-bottom: 2px solid #DBE0E8 !important;
+          -webkit-box-shadow: 0 1px 0 0 #DBE0E8 !important;
+          box-shadow: 0 1px 0 0 #DBE0E8 !important;
+      }
+
     }
+
+
 }
 
 .avatar img{
@@ -276,17 +286,7 @@ header{
 
 
 
-input{
-    border-bottom: 2px solid #DBE0E8 !important;
 
-    &:focus{
-
-
-        border-bottom: 2px solid #DBE0E8 !important;
-        -webkit-box-shadow: 0 1px 0 0 #DBE0E8 !important;
-        box-shadow: 0 1px 0 0 #DBE0E8 !important;
-    }
-}
 
 
 
